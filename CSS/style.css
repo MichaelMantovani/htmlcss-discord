@@ -43,7 +43,18 @@ header{
   }
 
   h1{
-    font-size: 60px;
+    font-size: 65px;
+  }
+
+  h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
   }
 
 /* UTILITIES */
@@ -157,17 +168,10 @@ header{
 
   
 
-  .info > p{
-    font-size: 20px;
-    line-height: 35px;
-    margin-top: 60px;
-  }
-
-
-.actions{
+  .actions{
   margin-top: 40px;
   margin-bottom: 150px;
-}
+  }   
 
 
  .mac-download::before{
@@ -183,7 +187,7 @@ header{
     padding: 18px 25px;
   }
 
-  
+
   .open-browser{
     background-color: rgb(35,39,42);
     border-radius: 25px;
@@ -194,11 +198,24 @@ header{
 
 /* MAIN */
 
-.first-row-section{
-  width: 50%;
-  height: 80%;
+
+/* discord channels section */
+
+.channels{
+  display: flex;
+  justify-content: center;
+  margin: 150px auto;
 }
 
+.channels-img{
+  flex-basis: 70%;
+}
+
+.channels-info{
+  flex-basis: 30%;
+}
+
+/*  */
 
 
 
