@@ -20,7 +20,7 @@
   --bgcolor-light-blue: rgb(32,178,170);
   --bgcolor-aquamarine: rgb(127,255,212);
   --bgcolor-dark-blue: rgb(0,0,139);
-  --bgcolor-header: rgb(173,216,230);
+  
   --bgcolor-black: rgb(35,39,42);
   --large-width: calc(1200px / 3 * 2);
   --small-width: calc(1200px / 3);
@@ -28,16 +28,37 @@
 
 
 
-/* GENERAL */
+/* GENERICS */
+
+body{
+  font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
 
 
+header{
+  height: 615px;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  }
 
+  h1{
+    font-size: 60px;
+  }
 
 /* UTILITIES */
 
 .container{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.deco-none{
+  text-decoration: none;
+}
+
+.color-white{
+  color: white;
 }
 
 .bd-black{
@@ -62,9 +83,8 @@
 }
 
 
-.bgcolor-dark-blue{
-  background-color: var(--bgcolor-dark-blue);
-}
+
+
 
 
 .bgcolor-blue{
@@ -98,36 +118,85 @@
 
 /* HEADER */
 
-header{
-  background-color: var(--bgcolor-header);
-  }
-
   .navbar{
-    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .navbar div{
-    background-color: var(--bgcolor-yellow);
-    flex-basis: 34%;
-  }
-
   .navmenu{
+    flex-basis: 80%;
     text-align: center;
   }
 
-  .navlogin{
-    text-align: right;
+
+  .navmenu > a{
+    color: white;
+    padding: 0 20px;
   }
+
+  .navlogin{
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    flex-basis: 5%;
+    padding: 10px;
+  }
+
+  .navlogin > a{
+    color: black;
+  }
+
+  .introduction{
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 75px;
+    text-align: center;
+  }
+
+  
+
+  .info > p{
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 60px;
+  }
+
+
+.actions{
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+
+
+ .mac-download::before{
+    content: '\1F817';
+    margin-right: 10px
+  }
+
+
+  .mac-download{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 18px 25px;
+  }
+
+  
+  .open-browser{
+    background-color: rgb(35,39,42);
+    border-radius: 25px;
+    padding: 18px 25px;
+  }
+
+
 
 /* MAIN */
 
 .first-row-section{
   width: 50%;
   height: 80%;
-  background-color: var(--bgcolor-purple);
 }
 
 
